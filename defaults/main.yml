@@ -1,0 +1,10 @@
+---
+
+# Reboot message
+poweroff_message: 'Power off by Ansible'
+
+# Interval after poweroff?
+poweroff_interval: 'no'
+
+# Interval before next task
+poweroff_interval_seconds: 0

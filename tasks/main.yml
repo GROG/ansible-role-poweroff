@@ -1,0 +1,14 @@
+---
+
+- name: Poweroff host
+  shell: sleep 2 && shutdown -P now "{{ poweroff_message }}"
+  async: 1
+  poll: 0
+  ignore_errors: yes
+
+- name: Interval before next task
+  become: no
+  pause:
+    seconds: "{{ poweroff_interval_seconds }}"
+  when: poweroff_interval|string in 'True,true,Yes,yes'
+    # Checked as string to make sure it can be specified from the command line.
