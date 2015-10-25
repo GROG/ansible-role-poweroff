@@ -1,6 +1,7 @@
 ---
 
 - name: Check if host is online
+  become: no
   local_action: wait_for
     delay="{{ poweroff_ping_delay }}"
     state=started
