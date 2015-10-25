@@ -5,8 +5,9 @@
 
 A role for powering off hosts.
 
-The role will fail if the host is already down. More control over this
-behaviour is planned for the future.
+By default the role will fail if the host is already down. If however
+`poweroff_strict` is set to `false`, hosts will first be pinged and only
+reachable hosts will be powered off.
 
 ## Requirements
 
