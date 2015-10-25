@@ -1,14 +1,16 @@
 ---
 
-- name: Poweroff host
-  shell: sleep 2 && shutdown -P now "{{ poweroff_message }}"
-  async: 1
-  poll: 0
-  ignore_errors: yes
+- name: Check if host is online
+  local_action: wait_for
+    delay="{{ poweroff_ping_delay }}"
+    state=started
+    timeout="{{ poweroff_ping_timeout }}"
+    host="{{ ansible_ssh_host }}"
+    port="{{ poweroff_ping_port }}"
+  failed_when: false
+  register: poweroff_pong
+  when: not poweroff_strict|string in 'True,true,Yes,yes'
 
-- name: Interval before next task
-  become: no
-  pause:
-    seconds: "{{ poweroff_interval_seconds }}"
-  when: poweroff_interval|string in 'True,true,Yes,yes'
-    # Checked as string to make sure it can be specified from the command line.
+- include: poweroff.yml
+  when: poweroff_strict|string in 'True,true,Yes,yes' or
+        (poweroff_pong.state | default(false)) == 'started'

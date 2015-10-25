@@ -1,4 +1,15 @@
 ---
+# Strict mode
+poweroff_strict: true
+
+# Delay before ping
+poweroff_ping_delay: 0
+
+# Ping timeout
+poweroff_ping_timeout: 30
+
+# Ping port
+poweroff_ping_port: 22
 
 # Reboot message
 poweroff_message: 'Power off by Ansible'

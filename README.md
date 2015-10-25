@@ -17,6 +17,10 @@ behaviour is planned for the future.
 
 | Variable | Description | Default value |
 |----------|-------------|---------------|
+| `poweroff_strict` | Don't ignore offline/unreachable hosts | `true` |
+| `poweroff_ping_delay` | Delay before pinging hosts (seconds) | 0 |
+| `poweroff_ping_timeout` | Timeout when pinging hosts (seconds) | 30 |
+| `poweroff_ping_port` | Port to ping | 22 |
 | `poweroff_message` | Reboot message for the logs | 'Power off by Ansible' |
 | `poweroff_interval` | Interval between poweroff and next task? | 'no' |
 | `poweroff_interval_seconds` | Seconds to pause after poweroff | 0 |
