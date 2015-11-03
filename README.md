@@ -11,7 +11,7 @@ reachable hosts will be powered off.
 
 ## Requirements
 
-- Hosts should be bootstrapt for ansible usage (have python,...)
+- Hosts should be bootstrapped for ansible usage (have python,...)
 - Root privileges, eg `become: yes`
 
 ## Role Variables
