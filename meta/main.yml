@@ -15,6 +15,9 @@ galaxy_info:
   - name: GenericLinux
     versions:
     - any
-  categories:
+  galaxy_tags:
+  - power
+  - shutdown
+  - poweroff
   - system
 dependencies: []
