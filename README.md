@@ -2,6 +2,8 @@
 
 [![Ansible Galaxy][galaxy_image]][galaxy_link]
 [![Build Status][travis_image]][travis_link]
+[![Latest tag][tag_image]][tag_url]
+[![Gitter chat][gitter_image]][gitter_url]
 
 A role for powering off hosts.
 
@@ -64,6 +66,10 @@ MIT
 [galaxy_link]:          https://galaxy.ansible.com/GROG/poweroff
 [travis_image]:         https://travis-ci.org/GROG/ansible-role-poweroff.svg?branch=master
 [travis_link]:          https://travis-ci.org/GROG/ansible-role-poweroff
+[tag_image]:            https://img.shields.io/github/tag/GROG/ansible-role-poweroff.svg
+[tag_url]:              https://github.com/GROG/ansible-role-poweroff/tags
+[gitter_image]:         https://badges.gitter.im/GROG/chat.svg
+[gitter_url]:           https://gitter.im/GROG/chat
 
 [issues]:               https://github.com/GROG/ansible-role-poweroff/issues
 [groggemans]:           https://github.com/groggemans
