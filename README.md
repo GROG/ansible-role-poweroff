@@ -1,7 +1,9 @@
 # Poweroff
 
-[![Ansible Galaxy](http://img.shields.io/badge/galaxy-GROG.poweroff-660198.svg?style=flat)](https://galaxy.ansible.com/GROG/poweroff)
-[![Build Status](https://travis-ci.org/GROG/ansible-role-poweroff.svg?branch=master)](https://travis-ci.org/GROG/ansible-role-poweroff)
+[![Ansible Galaxy][galaxy_image]][galaxy_link]
+[![Build Status][travis_image]][travis_link]
+[![Latest tag][tag_image]][tag_url]
+[![Gitter chat][gitter_image]][gitter_url]
 
 A role for powering off hosts.
 
@@ -51,11 +53,23 @@ None.
 
 ## Contributing
 
-All assistance, changes or ideas [welcome](https://github.com/GROG/ansible-role-poweroff/issues)!
+All assistance, changes or ideas [welcome][issues]!
 
 ## Author
 
-By [G. Roggemans](https://github.com/groggemans)
+By [G. Roggemans][groggemans]
 
 ## License
 MIT
+
+[galaxy_image]:         http://img.shields.io/badge/galaxy-GROG.poweroff-660198.svg?style=flat
+[galaxy_link]:          https://galaxy.ansible.com/GROG/poweroff
+[travis_image]:         https://travis-ci.org/GROG/ansible-role-poweroff.svg?branch=master
+[travis_link]:          https://travis-ci.org/GROG/ansible-role-poweroff
+[tag_image]:            https://img.shields.io/github/tag/GROG/ansible-role-poweroff.svg
+[tag_url]:              https://github.com/GROG/ansible-role-poweroff/tags
+[gitter_image]:         https://badges.gitter.im/GROG/chat.svg
+[gitter_url]:           https://gitter.im/GROG/chat
+
+[issues]:               https://github.com/GROG/ansible-role-poweroff/issues
+[groggemans]:           https://github.com/groggemans
