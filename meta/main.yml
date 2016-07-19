@@ -20,4 +20,7 @@ galaxy_info:
   - shutdown
   - poweroff
   - system
+
+allow_duplicates: yes
+
 dependencies: []
